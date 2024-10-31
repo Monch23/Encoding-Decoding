@@ -43,7 +43,7 @@ char* decode (char *str) {
 
 int main(int argc, const char *argv[]) {
 	int fd = open(argv[1], O_CREAT | O_RDWR , S_IRUSR | S_IWUSR);
-	char *codedMsg = encode("Hello From Afganistan !");
+	char *codedMsg = encode("Hello From Parent Process !");
 	int length = strlen(codedMsg);
 	pid_t pid = fork();
 
